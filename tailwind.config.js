@@ -7,9 +7,11 @@ module.exports = {
   ],
   theme: {
     colors: {
-      neutralgray: "#E5E5E5",
-      text: "#262626",
+      neutral_gray: "#E5E5E5",
+      high_gray: "#1E1E1E",
       blue: "#2563EB",
+      light_blue: "#0066FF",
+      white: "#FFFFFF",
     },
     extend: {
       backgroundImage: {
