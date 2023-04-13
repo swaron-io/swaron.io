@@ -7,7 +7,8 @@ export function Header() {
       <h3 className="text-2xl font-bold">
         swar<span className="text-blue">o</span>n
       </h3>
-      <span className="flex gap-2">
+      {/*Must be a dropdown */}
+      <span className="border border-dashed border-red flex gap-2">
         <h3 className="ml-24 text-high_gray">Learning paths</h3>{" "}
         <button>
           <ChevronDown />
