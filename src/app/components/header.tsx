@@ -3,7 +3,7 @@ import { ChevronDown } from "lucide-react";
 
 export function Header() {
   return (
-    <header className="flex border-b items-center border-neutral_gray justify-start px-24 py-8">
+    <header className="flex items-center justify-start px-20 py-16">
       <h3 className="text-2xl font-bold">
         swar<span className="text-blue">o</span>n
       </h3>
