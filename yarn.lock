@@ -1548,11 +1548,6 @@ lucide-react@^0.144.0:
   resolved "https://registry.npmjs.org/lucide-react/-/lucide-react-0.144.0.tgz"
   integrity sha512-smxwRsaHL9YZxzv4rPWDYJUKGJTCwZxjWMvClS6NBv9qIrYDHIIQdGRcM1pS7mnzUY5dXdIwyHDD0sk3hep/1Q==
 
-lucide@^0.144.0:
-  version "0.144.0"
-  resolved "https://registry.npmjs.org/lucide/-/lucide-0.144.0.tgz"
-  integrity sha512-NKFURFn9fJnEIyzKszQjfY61Bf8OFgoaX4VmLbyfCfl0TDlwnR/9Z8l7h9nqOugMQDps0qFXMbmIzwXZJKA9/Q==
-
 merge2@^1.3.0, merge2@^1.4.1:
   version "1.4.1"
   resolved "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz"
