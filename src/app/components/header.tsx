@@ -14,7 +14,7 @@ export function Header() {
           <ChevronDown />
         </button>
       </span>
-      <Link className="mr-auto ml-24 text-high_gray" href={""}>
+      <Link className="mr-auto ml-24 text-high_gray" href={"/about"}>
         <h3>About</h3>
       </Link>
       <Link href="/">
