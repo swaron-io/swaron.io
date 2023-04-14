@@ -9,10 +9,12 @@ export default function Home() {
     <main className={`${inter.className}`}>
       <Header />
       <div className="grid grid-cols-2 h-[750px]">
-        <div className="flex justify-end items-center border">
+        <div className="flex justify-end pr-4 items-center">
           aqui ficara uma imagem
         </div>
-        <div className="grid-col border"></div>
+        <div className="flex justify-start pl-4 items-center">
+          aqui ficara o texto
+        </div>
       </div>
     </main>
   );
