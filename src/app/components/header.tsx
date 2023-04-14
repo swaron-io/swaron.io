@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { Dropdown } from "./dropdown";
 
 export function Header() {
   return (
@@ -8,11 +8,9 @@ export function Header() {
         swar<span className="text-blue">o</span>n
       </h3>
       {/*Must be a dropdown */}
-      <span className="flex gap-2">
-        <h3 className="ml-24 text-high_gray">Learning paths</h3>{" "}
-        <button>
-          <ChevronDown />
-        </button>
+      <span className="flex gap-2 items-center">
+        <h3 className="ml-24 text-high_gray">Learning paths</h3>
+        <Dropdown />
       </span>
       <Link className="mr-auto ml-24 text-high_gray" href={"/about"}>
         <h3>About</h3>
