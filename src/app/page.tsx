@@ -31,13 +31,13 @@ export default function Home() {
               <input
                 type="search"
                 id="search"
-                className="text-gray-900 w-full rounded-lg bg-white_ice p-4 pl-4 text-sm font-bold "
+                className="text-gray-900 w-full rounded-[20px] bg-white_ice p-4 pl-4 text-sm"
                 placeholder="E-mail address"
                 required
               />
               <button
                 type="submit"
-                className="absolute bottom-2 right-2.5 items-center rounded-lg bg-blue px-4 py-2 text-sm font-medium text-white duration-200 hover:bg-light_blue focus:outline-none focus:ring-4"
+                className="absolute top-1 font-bold right-1 items-center rounded-[20px] bg-blue px-4 py-3 text-sm text-white duration-200 hover:bg-light_blue focus:outline-none focus:ring-4"
               >
                 Join our waitlist
               </button>
