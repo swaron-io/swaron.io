@@ -17,20 +17,17 @@ export default function Home() {
             <h1 className="from-green-400 to-blue-500 text-gradient-to-r text-6xl/tight font-bold">
               Learn IT for free
             </h1>
-            {/* <h1 className="from-green-400 to-blue-500 text-gradient-to-r text-6xl/tight font-bold">
-              Learn IT for free
-            </h1> */}
             <h2 className="text-5xl font-bold ">with swaron</h2>
           </div>
-          <span className="max-w-md py-8 pb-20 text-2xl">
+          <span className="max-w-[30rem] py-8 pb-20 text-gray text-2xl">
             Swaron IO is a platform to learn for free. We believe that knowledge
             must be accessible to everyone.
           </span>
-          <form className="max-w-md items-center">
+          <form className="max-w-[30rem] items-center">
             <div className="relative items-center">
               <input
-                type="search"
-                id="search"
+                type="email"
+                id="email"
                 className="text-gray-900 w-full rounded-[20px] bg-white_ice p-4 pl-4 text-sm"
                 placeholder="E-mail address"
                 required
@@ -47,8 +44,8 @@ export default function Home() {
         <div className="flex items-center justify-end pl-4 ">
           <Image
             alt="oi"
-            width={600}
-            height={0}
+            width={400}
+            height={400}
             src="https://cdn.discordapp.com/attachments/1015005616663691425/1098315332164255784/undraw_mathematics_-4-otb_1.png"
           />
         </div>
