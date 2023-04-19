@@ -13,6 +13,7 @@ module.exports = {
       light_blue: "#0066FF",
       white: "#FFFFFF",
       red: "#FF0000",
+      white_ice: "#DDDDDD"
     },
     extend: {
       backgroundImage: {
@@ -20,6 +21,7 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: { inactive: '0px 2px 4px 2px rgba(0, 0, 0, 0.15)', interaction: '0px 2px 6px 4px rgba(0, 0, 0, 0.15)', }
     },
   },
   plugins: [],
