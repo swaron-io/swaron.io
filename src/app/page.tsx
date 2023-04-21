@@ -20,7 +20,7 @@ export default function Home() {
             <h2 className="text-5xl font-bold ">with swaron</h2>
           </div>
           <span className="max-w-[30rem] py-8 pb-20 text-gray text-2xl">
-            Swaron IO is a platform to learn for free. We believe that knowledge
+            SwaronIO is a platform to learn for free. We believe that knowledge
             must be accessible to everyone.
           </span>
           <form className="max-w-[30rem] items-center">
