@@ -4,9 +4,11 @@ import { Dropdown } from "./dropdown";
 export function Header() {
   return (
     <header className="flex items-center justify-start py-16">
-      <h3 className="text-2xl font-bold">
-        swar<span className="text-blue">o</span>n
-      </h3>
+       <Link href={"/"}>
+          <h3 className="text-2xl font-bold">
+            swar<span className="text-blue">o</span>n
+          </h3>
+       </Link>
       {/*Must be a dropdown */}
       <span className="flex items-center gap-2">
         <h3 className="ml-24 text-high_gray">Learning paths</h3>
