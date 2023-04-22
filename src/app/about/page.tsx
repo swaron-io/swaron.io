@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Italic } from "lucide-react";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function About() {
   return (
-    <main className="px-96">
+    <main className={`${inter.className}  px-96`}>
       <header className="flex items-center justify-start py-16">
         <Link href={"/"}>
         <h3 className="text-2xl font-bold">

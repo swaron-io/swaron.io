@@ -4,9 +4,6 @@ import { Header } from "./components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const image =
-  "https://cdn.discordapp.com/attachments/1015005616663691425/1098315332164255784/undraw_mathematics_-4-otb_1.png";
-
 export default function Home() {
   return (
     <main className={`${inter.className}  px-96`}>
