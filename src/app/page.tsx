@@ -11,7 +11,12 @@ export default function Home() {
       <section className="grid grid-cols-2 py-14">
         <div className="flex flex-col">
           <div>
-            <h1 className="from-green-400 to-blue-500 text-gradient-to-r text-6xl/tight font-bold">
+            <h1 
+              className="bg-gradient-to-r from-blue to-#62CDFF hover:from-white_blue hover:to-blue text-6xl/tight font-bold bg-clip-text"
+              style={{
+                color: "transparent",
+              }}
+            >
               Learn IT for free
             </h1>
             <h2 className="text-5xl font-bold ">with swaron</h2>
