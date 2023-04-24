@@ -6,10 +6,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={`${inter.className}  px-96`}>
+    <main className={`${inter.className} px-4 md:px-16 lg:px-40 2xl:px-72`}>
       <Header />
-      <section className="grid grid-cols-2 py-14">
-        <div className="flex flex-col">
+      <section className="flex justify-between py-14">
+        <div className="flex justify-between flex-col">
           <div>
             <h1 
               className="bg-gradient-to-r from-blue to-#62CDFF hover:from-white_blue hover:to-blue text-6xl/tight font-bold bg-clip-text"
@@ -43,14 +43,16 @@ export default function Home() {
             </div>
           </form>
         </div>
-        <div className="flex items-center justify-end pl-4 ">
-          <Image
-            alt="oi"
-            width={400}
-            height={400}
-            src="https://cdn.discordapp.com/attachments/1015005616663691425/1098315332164255784/undraw_mathematics_-4-otb_1.png"
-          />
-        </div>
+        {/* <div className="md:flex hidden"> */}
+          <div className=" pl-4 md:flex hidden">
+            <Image
+              alt="oi"
+              width={400}
+              height={400}
+              src="https://cdn.discordapp.com/attachments/1015005616663691425/1098315332164255784/undraw_mathematics_-4-otb_1.png"
+            />
+          </div>
+        {/* </div> */}
       </section>
     </main>
   );

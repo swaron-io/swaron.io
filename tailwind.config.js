@@ -27,6 +27,10 @@ module.exports = {
       },
       boxShadow: { inactive: '0px 2px 4px 2px rgba(0, 0, 0, 0.15)', interaction: '0px 2px 6px 4px rgba(0, 0, 0, 0.15)', }
     },
+    // screens: {
+    //   '3xl': '1920px',
+    //   '4xl': '2560px',
+    // },
   },
   plugins: [],
 };
