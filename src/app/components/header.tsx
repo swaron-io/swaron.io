@@ -10,7 +10,7 @@ export function Header() {
           </h3>
        </Link>
       {/*Must be a dropdown */}
-      <span className="flex items-center gap-2">
+      <span className="items-center gap-2 hidden sm:flex">
         <h3 className="md:ml-24 ml-4 text-high_gray">Learning paths</h3>
         <Dropdown />
       </span>

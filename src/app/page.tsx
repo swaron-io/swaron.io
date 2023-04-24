@@ -44,7 +44,7 @@ export default function Home() {
           </form>
         </div>
         {/* <div className="md:flex hidden"> */}
-          <div className=" pl-4 md:flex hidden">
+          <div className="pl-4 md:flex hidden">
             <Image
               alt="oi"
               width={400}
