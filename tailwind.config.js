@@ -16,7 +16,8 @@ module.exports = {
       red: "#FF0000",
       white_ice: "#DDDDDD",
       white_blue: "#5398FF",
-      mid_white_blue: "#5D9BFC"
+      mid_white_blue: "#5D9BFC",
+      app_bg: "#f4f4f4"
     },
     extend: {
       backgroundImage: {
