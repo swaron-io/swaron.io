@@ -6,13 +6,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={`${inter.className} px-4 md:px-16 lg:px-40 2xl:px-72`}>
+    <main className={`${inter.className} mx-auto w-[95%] max-w-[1140px]`}>
       <Header />
-      <section className="flex justify-between py-14">
-        <div className="flex justify-between flex-col">
+      <section className="flex flex-col items-center justify-center py-14 md:flex-row md:justify-between">
+        <div className="flex flex-col justify-between">
           <div>
-            <h1 
-              className="bg-gradient-to-r from-blue to-#62CDFF hover:from-white_blue hover:to-blue text-6xl/tight font-bold bg-clip-text"
+            <h1
+              className="to-#62CDFF bg-gradient-to-r from-blue bg-clip-text text-6xl/tight font-bold hover:from-white_blue hover:to-blue"
               style={{
                 color: "transparent",
               }}
@@ -21,7 +21,7 @@ export default function Home() {
             </h1>
             <h2 className="text-5xl font-bold ">with swaron</h2>
           </div>
-          <span className="max-w-[30rem] py-8 pb-20 text-gray text-2xl">
+          <span className="max-w-[30rem] py-8 pb-20 text-2xl text-gray">
             SwaronIO is a platform to learn for free. We believe that knowledge
             must be accessible to everyone.
           </span>
@@ -36,23 +36,21 @@ export default function Home() {
               />
               <button
                 type="submit"
-                className="absolute top-1 font-bold right-1 items-center rounded-[20px] bg-blue px-4 py-3 text-sm text-white duration-200 hover:bg-light_blue focus:outline-none focus:ring-4"
+                className="absolute right-1 top-1 items-center rounded-[20px] bg-blue px-4 py-3 text-sm font-bold text-white duration-200 hover:bg-light_blue focus:outline-none focus:ring-4"
               >
                 Join our waitlist
               </button>
             </div>
           </form>
         </div>
-        {/* <div className="md:flex hidden"> */}
-          <div className="pl-4 md:flex hidden">
-            <Image
-              alt="oi"
-              width={400}
-              height={400}
-              src="https://cdn.discordapp.com/attachments/1015005616663691425/1098315332164255784/undraw_mathematics_-4-otb_1.png"
-            />
-          </div>
-        {/* </div> */}
+        <div className="hidden pl-4 md:block">
+          <Image
+            alt="oi"
+            width={400}
+            height={400}
+            src="https://cdn.discordapp.com/attachments/1015005616663691425/1098315332164255784/undraw_mathematics_-4-otb_1.png"
+          />
+        </div>
       </section>
     </main>
   );
