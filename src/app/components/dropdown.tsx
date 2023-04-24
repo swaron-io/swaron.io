@@ -18,45 +18,50 @@ export function Dropdown() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="fixed mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="divide-gray-100 ring-black fixed mt-2 w-56 origin-top-right divide-y rounded-md bg-white shadow-lg ring-1 ring-opacity-5 focus:outline-none">
           <div className="px-1 py-1 ">
             <Menu.Item>
               <button
-                className={`hover:bg-neutral_gray group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                disabled={true}
+                className={`group flex w-full cursor-not-allowed items-center rounded-md px-2 py-2 text-sm hover:bg-neutral_gray`}
               >
-                Edit
+                Databases
               </button>
             </Menu.Item>
             <Menu.Item>
               <button
-                className={`hover:bg-neutral_gray group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                disabled={true}
+                className={`group flex w-full cursor-not-allowed items-center rounded-md px-2 py-2 text-sm hover:bg-neutral_gray`}
               >
-                Duplicate
-              </button>
-            </Menu.Item>
-          </div>
-          <div className="px-1 py-1">
-            <Menu.Item>
-              <button
-                className={`hover:bg-neutral_gray group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-              >
-                Archive
-              </button>
-            </Menu.Item>
-            <Menu.Item>
-              <button
-                className={`hover:bg-neutral_gray group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-              >
-                Move
+                Web development
               </button>
             </Menu.Item>
           </div>
           <div className="px-1 py-1">
             <Menu.Item>
               <button
-                className={`hover:bg-neutral_gray group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                disabled={true}
+                className={`group flex w-full cursor-not-allowed items-center rounded-md px-2 py-2 text-sm hover:bg-neutral_gray`}
               >
-                Delete
+                Computer science
+              </button>
+            </Menu.Item>
+            <Menu.Item>
+              <button
+                disabled={true}
+                className={`group flex w-full cursor-not-allowed items-center rounded-md px-2 py-2 text-sm hover:bg-neutral_gray`}
+              >
+                Algorithms
+              </button>
+            </Menu.Item>
+          </div>
+          <div className="px-1 py-1">
+            <Menu.Item>
+              <button
+                disabled={true}
+                className={`group flex w-full cursor-not-allowed items-center rounded-md px-2 py-2 text-sm hover:bg-neutral_gray`}
+              >
+                Programming languages
               </button>
             </Menu.Item>
           </div>
