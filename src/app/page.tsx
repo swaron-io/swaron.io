@@ -11,11 +11,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const [email, setEmail] = useState<string>()
 
-  const notify = (message: string) => toast(message);
-
   const sendEmail = async (event: FormEvent) => {
     event.preventDefault();
-    if (!email) return;
+    if (!email) return toast.error('Please enter your email')
 
     const config = {
       method: 'POST',
@@ -26,9 +24,13 @@ export default function Home() {
     try {
       const result = await fetch('https://swaron-landing-api.onrender.com/register', config)
       const data = await result.json();
-      notify(result.status === 409 ? 'Email already registered' : 'Email sent! Welcome to swaron.io 🎉')
+      if (result.status === 409) {
+        toast.error('Email already registered ⚠️')
+      } else {
+        toast('Email sent! Welcome to swaron.io 🎉')
+      }
     } catch (error) {
-      notify('Something went wrong, try again later 😢')
+      toast.error('Something went wrong, try again later 😢')
     }
   }
   
