@@ -8,11 +8,17 @@ module.exports = {
   theme: {
     colors: {
       neutral_gray: "#E5E5E5",
+      gray: "#686868",
       high_gray: "#1E1E1E",
       blue: "#2563EB",
       light_blue: "#0066FF",
       white: "#FFFFFF",
       red: "#FF0000",
+      white_ice: "#DDDDDD",
+      white_blue: "#5398FF",
+      mid_white_blue: "#5D9BFC",
+      app_bg: "#f4f4f4",
+      green_shrek: "#74f9c4"
     },
     extend: {
       backgroundImage: {
@@ -20,7 +26,12 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: { inactive: '0px 2px 4px 2px rgba(0, 0, 0, 0.15)', interaction: '0px 2px 6px 4px rgba(0, 0, 0, 0.15)', }
     },
+    // screens: {
+    //   '3xl': '1920px',
+    //   '4xl': '2560px',
+    // },
   },
   plugins: [],
 };
