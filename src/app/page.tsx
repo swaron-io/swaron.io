@@ -1,7 +1,7 @@
 'use client';
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import { FormEvent, useEffect, useRef, useState } from "react";
+import { FormEvent, useState } from "react";
 import { Header } from "./components/header";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -66,7 +66,6 @@ export default function Home() {
               />
               <button
                 type="submit"
-                disabled={!email}
                 className="absolute right-1 top-1 items-center rounded-[20px] bg-blue px-4 py-3 text-sm font-bold text-white duration-200 hover:bg-light_blue focus:outline-none focus:ring-4"
               >
                 Join our waitlist
