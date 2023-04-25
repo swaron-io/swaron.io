@@ -1,13 +1,17 @@
 'use client';
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 import { Header } from "./components/header";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [email, setEmail] = useState<string>()
+
+  const notify = (message: string) => toast(message);
 
   const sendEmail = async (event: FormEvent) => {
     event.preventDefault();
@@ -22,16 +26,15 @@ export default function Home() {
     try {
       const result = await fetch('https://swaron-landing-api.onrender.com/register', config)
       const data = await result.json();
-      console.log(data)
-      alert(data);
+      notify(result.status === 409 ? 'Email already registered' : 'Email sent! Welcome to swaron.io 🎉')
     } catch (error) {
-      console.log(error);
-      alert('error trying to send the email')
+      notify('Something went wrong, try again later 😢')
     }
   }
   
   return (
     <main className={`${inter.className} mx-auto w-[95%] max-w-[1140px]`}>
+      <ToastContainer />
       <Header />
       <section className="flex flex-col items-center justify-center py-14 md:flex-row md:justify-between">
         <div className="flex flex-col justify-between">
