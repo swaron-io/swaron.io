@@ -17,7 +17,7 @@ export function Header() {
       <Link className="md:ml-24 ml-4 mr-auto text-high_gray" href={"/about"}>
         <h3>About</h3>
       </Link>
-      <Link href="/">
+      <Link href="/#email">
         <button className="rounded-full bg-blue px-8 py-2 font-semibold text-white duration-200 hover:bg-light_blue">
           Join
         </button>
