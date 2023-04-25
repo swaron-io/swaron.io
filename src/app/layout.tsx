@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export const metadata = {
@@ -24,12 +25,14 @@ export default function RootLayout({
           property="og:description"
           content="SwaronIO is a platform to learn computer science for free. Join our waitlist to get early access."
         />
-        <meta property="og:image" content='https://cdn.discordapp.com/attachments/1088918960533164106/1100446169542434961/3b2c3981-1dad-4bb2-8413-2850921432f7.png' />
+        <meta
+          property="og:image"
+          content="https://cdn.discordapp.com/attachments/1088918960533164106/1100446169542434961/3b2c3981-1dad-4bb2-8413-2850921432f7.png"
+        />
       </Head>
-      <body
-        className="bg-app_bg"
-      >
+      <body className="bg-app_bg">
         {children}
+        <Analytics />
       </body>
     </html>
   );
