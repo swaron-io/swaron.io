@@ -12,7 +12,7 @@ export default function Home() {
         <div className="flex flex-col justify-between">
           <div>
             <h1
-              className="to-#62CDFF bg-gradient-to-r from-blue bg-clip-text text-6xl/tight font-bold hover:from-white_blue hover:to-blue"
+              className="bg-gradient-to-r from-blue to-green_shrek bg-clip-text text-6xl/tight font-bold hover:from-white_blue hover:to-blue"
               style={{
                 color: "transparent",
               }}

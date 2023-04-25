@@ -17,7 +17,8 @@ module.exports = {
       white_ice: "#DDDDDD",
       white_blue: "#5398FF",
       mid_white_blue: "#5D9BFC",
-      app_bg: "#f4f4f4"
+      app_bg: "#f4f4f4",
+      green_shrek: "#74f9c4"
     },
     extend: {
       backgroundImage: {
