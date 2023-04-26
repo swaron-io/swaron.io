@@ -5,14 +5,17 @@ import { FormEvent, useState } from "react";
 import { Header } from "./components/header";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { LoadingSpinner } from "./components/loading-spinner";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [email, setEmail] = useState<string>()
+  const [isLoading, setIsLoading] = useState(false)
 
   const sendEmail = async (event: FormEvent) => {
     event.preventDefault();
+    setIsLoading(true)
     if (!email) return toast.error('Please enter your email')
 
     const config = {
@@ -23,7 +26,6 @@ export default function Home() {
     
     try {
       const result = await fetch('https://swaron-landing-api.onrender.com/register', config)
-      const data = await result.json();
       if (result.status === 409) {
         toast.error('Email already registered ⚠️')
       } else {
@@ -32,6 +34,7 @@ export default function Home() {
     } catch (error) {
       toast.error('Something went wrong, try again later 😢')
     }
+    setIsLoading(false)
   }
   
   return (
@@ -70,7 +73,7 @@ export default function Home() {
                 type="submit"
                 className="absolute right-1 top-1 items-center rounded-[20px] bg-blue px-4 py-3 text-sm font-bold text-white duration-200 hover:bg-light_blue focus:outline-none focus:ring-4"
               >
-                Join our waitlist
+                {isLoading ? <LoadingSpinner /> : "Join our waitlist"}
               </button>
             </div>
           </form>
