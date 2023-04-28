@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { Header } from "../components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function About() {
   return (
     <main className={`${inter.className} mx-auto w-[95%] max-w-[1140px]`}>
-      <Header />
       <div className="flex flex-col lg:flex-row">
         <div className="w-full">
           <h1 className="pb-4 text-3xl font-bold">About us</h1>

@@ -1,46 +1,48 @@
-'use client';
+"use client";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { Header } from "./components/header";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { LoadingSpinner } from "./components/loading-spinner";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [email, setEmail] = useState<string>()
-  const [isLoading, setIsLoading] = useState(false)
+  const [email, setEmail] = useState<string>();
+  const [isLoading, setIsLoading] = useState(false);
 
   const sendEmail = async (event: FormEvent) => {
     event.preventDefault();
-    setIsLoading(true)
-    if (!email) return toast.error('Please enter your email')
+    setIsLoading(true);
+    if (!email) return toast.error("Please enter your email");
 
     const config = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email })
-    }
-    
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    };
+
     try {
-      const result = await fetch('https://swaron-landing-api.onrender.com/register', config)
+      const result = await fetch(
+        "https://swaron-landing-api.onrender.com/register",
+        config
+      );
       if (result.status === 409) {
-        toast.error('Email already registered ⚠️')
+        toast.error("Email already registered ⚠️");
       } else {
-        toast('Email sent! Welcome to swaron.io 🎉')
+        toast("Email sent! Welcome to swaron.io 🎉");
       }
     } catch (error) {
-      toast.error('Something went wrong, try again later 😢')
+      toast.error("Something went wrong, try again later 😢");
     }
-    setIsLoading(false)
-  }
-  
+    setIsLoading(false);
+  };
+
   return (
     <main className={`${inter.className} mx-auto w-[95%] max-w-[1140px]`}>
-      <ToastContainer />
-      <Header />
+      <ToastContainer />{" "}
       <section className="flex flex-col items-center justify-center py-14 md:flex-row md:justify-between">
         <div className="flex flex-col justify-between">
           <div>

@@ -1,1 +1,3 @@
-export const LoadingSpinner = () => <span className="flex items-center animate-spin w-5 h-5 rounded-full border-2 border-solid border-white/50 border-r-white" />
+export const LoadingSpinner = () => (
+  <span className="flex h-5 w-5 animate-spin items-center rounded-full border-2 border-solid border-white/50 border-r-white" />
+);
