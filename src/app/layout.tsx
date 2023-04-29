@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { Header } from "./components/header";
+import { Footer } from "./components/footer";
 
 export const metadata = {
   title: "Swaron.io",
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Analytics />
+        <Footer />
       </body>
     </html>
   );

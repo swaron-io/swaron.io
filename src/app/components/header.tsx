@@ -16,9 +16,9 @@ export function Header() {
       <Link className="ml-4 mr-auto text-high_gray md:ml-24" href={"/about"}>
         <h3>about</h3>
       </Link>{" "}
-      <Link className=" mr-auto text-high_gray md:ml-24" href={"/team"}>
+      {/* <Link className=" mr-auto text-high_gray md:ml-24" href={"/team"}>
         <h3>our team</h3>
-      </Link>
+      </Link> */}
       <Link href="/#email">
         <button className="rounded-full bg-blue px-8 py-2 font-semibold text-white duration-200 hover:bg-light_blue">
           Join

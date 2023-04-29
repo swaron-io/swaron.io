@@ -2,10 +2,10 @@
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import { FormEvent, useState } from "react";
-import { Header } from "./components/header";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { LoadingSpinner } from "./components/loading-spinner";
+import { Footer } from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
