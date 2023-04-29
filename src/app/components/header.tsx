@@ -14,7 +14,7 @@ export function Header() {
         <Dropdown />
       </span>
       <Link className="ml-4 mr-auto text-high_gray md:ml-24" href={"/about"}>
-        <h3>about</h3>
+        <h3>About</h3>
       </Link>{" "}
       {/* <Link className=" mr-auto text-high_gray md:ml-24" href={"/team"}>
         <h3>our team</h3>
