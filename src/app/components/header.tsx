@@ -6,7 +6,7 @@ export function Header() {
     <header className="mx-auto flex w-[95%] max-w-[1140px] items-center py-16">
       <div className="flex w-[95%] justify-between">
         <Link href={"/"}>
-          <h3 className="items-center text-2xl font-bold">
+          <h3 className="mt-[2px] items-center text-2xl font-bold">
             swar<span className="text-blue">o</span>n
           </h3>
         </Link>
