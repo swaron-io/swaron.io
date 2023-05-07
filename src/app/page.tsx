@@ -43,7 +43,7 @@ export default function Home() {
     <main className={`${inter.className} mx-auto w-[95%] max-w-[1140px]`}>
       <ToastContainer />{" "}
       <div className="flex items-center justify-center pb-4 pt-14 md:flex-row md:justify-center">
-        <h1 className="flex w-[40%] text-center text-3xl font-bold">
+        <h1 className="flex w-[60%] text-center text-5xl font-bold">
           Find out the best content to make your life easy
         </h1>
       </div>
@@ -59,6 +59,68 @@ export default function Home() {
         <button className="ml-8 w-36 rounded-lg border bg-blue text-white">
           Search
         </button>
+      </div>
+      <div className="m-auto mt-16 w-[800px]">
+        <h3 className="py-4 text-2xl font-bold">Featured</h3>
+        <div className="m-auto flex justify-between">
+          {/* Card */}
+          <div className="mt-8 h-64 w-56 items-start rounded-sm shadow-inactive">
+            <div className="m-auto flex h-40 w-40 justify-center py-3">
+              <Image
+                //Remove this src and add your own image
+                src="https://cdn.discordapp.com/attachments/1100525079013634168/1104841483800039494/Rectangle_5.png"
+                width={160}
+                height={160}
+                alt={"article image"}
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="text-lg font-bold">Vector databases</h3>
+              <div className="mt-3 flex justify-between text-sm">
+                <p className="text-sm">José Thomaz</p>
+                <p>Apr 13</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 h-64 w-56 items-start rounded-sm shadow-inactive">
+            <div className="m-auto flex h-40 w-40 justify-center py-3">
+              <Image
+                //Remove this src and add your own image
+                src="https://cdn.discordapp.com/attachments/1100525079013634168/1104841483531587665/Rectangle_6.png"
+                width={160}
+                height={160}
+                alt={"article image"}
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="text-lg font-bold">Scala4Newbies</h3>
+              <div className="mt-3 flex justify-between text-sm">
+                <p className="text-sm">Pedro Gonçalves</p>
+                <p>Apr 14</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 h-64 w-56 items-start rounded-sm shadow-inactive">
+            <div className="m-auto flex h-40 w-40 justify-center py-3">
+              <Image
+                //Remove this src and add your own image
+                src="https://cdn.discordapp.com/attachments/1100525079013634168/1104841649907052584/Rectangle_7.png"
+                width={160}
+                height={160}
+                alt={"article image"}
+              />
+            </div>
+            <div className="p-4">
+              <h3 className="text-lg font-bold">SOLID IN REACTJS</h3>
+              <div className="mt-3 flex justify-between text-sm">
+                <p className="text-sm">Mauricio Vieira</p>
+                <p>Apr 15</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
