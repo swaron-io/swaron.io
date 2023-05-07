@@ -56,7 +56,7 @@ export default function Home() {
           placeholder="What would you like to learn?"
           className="flex h-12 w-[450px] rounded-lg border p-3"
         />
-        <button className="ml-8 w-36 rounded-lg border bg-blue text-white">
+        <button className="ml-8 w-36 rounded-lg border  bg-blue text-lg font-bold text-white hover:bg-light_blue">
           Search
         </button>
       </div>
