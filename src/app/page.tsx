@@ -73,9 +73,9 @@ export default function Home() {
                 <p>Apr 14</p>
               </div>
               <div className="text-[14px] flex justify-between text-lighter_blue">
-                <a href="#" className="hover:text-blue">#databases</a>
-                <a href="#" className="hover:text-blue">#vectors</a>
-                <a href="#" className="hover:text-blue">#ai</a>
+                <a href="#" className="hover:text-blue">#scala</a>
+                <a href="#" className="hover:text-blue">#functional</a>
+                <a href="#" className="hover:text-blue">#java</a>
               </div>
             </div>
           </div>
@@ -97,9 +97,9 @@ export default function Home() {
                 <p>Apr 15</p>
               </div>
               <div className="text-[14px] flex justify-between text-lighter_blue">
-                <a href="#" className="hover:text-blue">#databases</a>
-                <a href="#" className="hover:text-blue">#vectors</a>
-                <a href="#" className="hover:text-blue">#ai</a>
+                <a href="#" className="hover:text-blue">#solidjs</a>
+                <a href="#" className="hover:text-blue">#typescript</a>
+                <a href="#" className="hover:text-blue">#react</a>
               </div>
             </div>
           </div>
