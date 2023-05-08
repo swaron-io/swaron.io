@@ -22,7 +22,7 @@ export default function Home() {
       <div className="flex justify-center rounded-lg pt-12">
         <input
           placeholder="What would you like to learn?"
-          className="flex h-12 w-[450px] rounded-lg border p-3"
+          className="flex w-[450px] rounded-lg border-2 border-mid_gray p-3"
         />
         <button className="ml-8 w-36 rounded-lg border  bg-blue text-lg font-bold text-white hover:bg-light_blue">
           Search
@@ -32,7 +32,7 @@ export default function Home() {
         <h3 className="py-4 text-2xl font-bold">Featured</h3>
         <div className="m-auto flex justify-between">
           {/* Card */}
-          <div className="mt-8 h-64 w-56 items-start rounded-sm shadow-inactive">
+          <div className="mt-8 w-60 items-start rounded-md shadow-interaction bg-white cursor-pointer hover:shadow-2xl transition duration-500">
             <div className="m-auto flex h-40 w-40 justify-center py-3">
               <Image
                 //Remove this src and add your own image
@@ -43,15 +43,20 @@ export default function Home() {
               />
             </div>
             <div className="p-4">
-              <h3 className="text-lg font-bold">Vector databases</h3>
-              <div className="mt-3 flex justify-between text-sm">
+              <h3 className="text-lg font-bold">Vector Databases</h3>
+              <div className="mt-4 flex justify-between text-sm mb-6">
                 <p className="text-sm">José Thomaz</p>
                 <p>Apr 13</p>
+              </div>
+              <div className="text-[14px] flex justify-between text-lighter_blue">
+                <a href="#" className="hover:text-blue">#databases</a>
+                <a href="#" className="hover:text-blue">#vectors</a>
+                <a href="#" className="hover:text-blue">#ai</a>
               </div>
             </div>
           </div>
 
-          <div className="mt-8 h-64 w-56 items-start rounded-sm shadow-inactive">
+          <div className="mt-8 w-60 items-start rounded-md shadow-interaction bg-white cursor-pointer hover:shadow-2xl transition duration-500">
             <div className="m-auto flex h-40 w-40 justify-center py-3">
               <Image
                 //Remove this src and add your own image
@@ -62,15 +67,20 @@ export default function Home() {
               />
             </div>
             <div className="p-4">
-              <h3 className="text-lg font-bold">Scala4Newbies</h3>
-              <div className="mt-3 flex justify-between text-sm">
+              <h3 className="text-lg font-bold">Introduction to Scala</h3>
+              <div className="mt-4 flex justify-between text-sm mb-6">
                 <p className="text-sm">Pedro Gonçalves</p>
                 <p>Apr 14</p>
+              </div>
+              <div className="text-[14px] flex justify-between text-lighter_blue">
+                <a href="#" className="hover:text-blue">#scala</a>
+                <a href="#" className="hover:text-blue">#functional</a>
+                <a href="#" className="hover:text-blue">#java</a>
               </div>
             </div>
           </div>
 
-          <div className="mt-8 h-64 w-56 items-start rounded-sm shadow-inactive">
+          <div className="mt-8 w-60 items-start rounded-md shadow-interaction bg-white cursor-pointer hover:shadow-2xl transition duration-500">
             <div className="m-auto flex h-40 w-40 justify-center py-3">
               <Image
                 //Remove this src and add your own image
@@ -81,10 +91,15 @@ export default function Home() {
               />
             </div>
             <div className="p-4">
-              <h3 className="text-lg font-bold">SOLID IN REACTJS</h3>
-              <div className="mt-3 flex justify-between text-sm">
+              <h3 className="text-lg font-bold">SolidJS in depth</h3>
+              <div className="mt-4 flex justify-between text-sm mb-6">
                 <p className="text-sm">Mauricio Vieira</p>
                 <p>Apr 15</p>
+              </div>
+              <div className="text-[14px] flex justify-between text-lighter_blue">
+                <a href="#" className="hover:text-blue">#solidjs</a>
+                <a href="#" className="hover:text-blue">#typescript</a>
+                <a href="#" className="hover:text-blue">#react</a>
               </div>
             </div>
           </div>
