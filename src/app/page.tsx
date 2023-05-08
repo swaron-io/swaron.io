@@ -22,7 +22,7 @@ export default function Home() {
       <div className="flex justify-center rounded-lg pt-12">
         <input
           placeholder="What would you like to learn?"
-          className="flex h-12 w-[450px] rounded-lg border p-3"
+          className="flex w-[450px] rounded-lg border-2 border-mid_gray p-3"
         />
         <button className="ml-8 w-36 rounded-lg border  bg-blue text-lg font-bold text-white hover:bg-light_blue">
           Search
