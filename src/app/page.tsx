@@ -32,7 +32,7 @@ export default function Home() {
         <h3 className="py-4 text-2xl font-bold">Featured</h3>
         <div className="m-auto flex justify-between">
           {/* Card */}
-          <div className="mt-8 w-56 items-start rounded-md shadow-interaction bg-white">
+          <div className="mt-8 w-60 items-start rounded-md shadow-interaction bg-white cursor-pointer">
             <div className="m-auto flex h-40 w-40 justify-center py-3">
               <Image
                 //Remove this src and add your own image
@@ -48,7 +48,7 @@ export default function Home() {
                 <p className="text-sm">José Thomaz</p>
                 <p>Apr 13</p>
               </div>
-              <div>
+              <div className="text-[14px] flex justify-between text-light_blue">
                 <a href="#">#databases</a>
                 <a href="#">#vectors</a>
                 <a href="#">#ai</a>
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 w-56 items-start rounded-md shadow-interaction bg-white">
+          <div className="mt-8 w-60 items-start rounded-md shadow-interaction bg-white cursor-pointer">
             <div className="m-auto flex h-40 w-40 justify-center py-3">
               <Image
                 //Remove this src and add your own image
@@ -72,7 +72,7 @@ export default function Home() {
                 <p className="text-sm">Pedro Gonçalves</p>
                 <p>Apr 14</p>
               </div>
-              <div>
+              <div className="text-[14px] flex justify-between text-light_blue">
                 <a href="#">#databases</a>
                 <a href="#">#vectors</a>
                 <a href="#">#ai</a>
@@ -80,7 +80,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 w-56 items-start rounded-md shadow-interaction bg-white">
+          <div className="mt-8 w-60 items-start rounded-md shadow-interaction bg-white cursor-pointer">
             <div className="m-auto flex h-40 w-40 justify-center py-3">
               <Image
                 //Remove this src and add your own image
@@ -96,7 +96,7 @@ export default function Home() {
                 <p className="text-sm">Mauricio Vieira</p>
                 <p>Apr 15</p>
               </div>
-              <div>
+              <div className="text-[14px] flex justify-between text-light_blue">
                 <a href="#">#databases</a>
                 <a href="#">#vectors</a>
                 <a href="#">#ai</a>
