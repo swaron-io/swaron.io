@@ -32,7 +32,7 @@ export default function Home() {
         <h3 className="py-4 text-2xl font-bold">Featured</h3>
         <div className="m-auto flex justify-between">
           {/* Card */}
-          <div className="mt-8 h-64 w-56 items-start rounded-md shadow-interaction bg-white">
+          <div className="mt-8 w-56 items-start rounded-md shadow-interaction bg-white">
             <div className="m-auto flex h-40 w-40 justify-center py-3">
               <Image
                 //Remove this src and add your own image
@@ -44,14 +44,19 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h3 className="text-lg font-bold">Vector Databases</h3>
-              <div className="mt-3 flex justify-between text-sm">
+              <div className="mt-4 flex justify-between text-sm mb-6">
                 <p className="text-sm">José Thomaz</p>
                 <p>Apr 13</p>
+              </div>
+              <div>
+                <a href="#">#databases</a>
+                <a href="#">#vectors</a>
+                <a href="#">#ai</a>
               </div>
             </div>
           </div>
 
-          <div className="mt-8 h-64 w-56 items-start rounded-md shadow-interaction bg-white">
+          <div className="mt-8 w-56 items-start rounded-md shadow-interaction bg-white">
             <div className="m-auto flex h-40 w-40 justify-center py-3">
               <Image
                 //Remove this src and add your own image
@@ -63,14 +68,19 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h3 className="text-lg font-bold">Introduction to Scala</h3>
-              <div className="mt-3 flex justify-between text-sm">
+              <div className="mt-4 flex justify-between text-sm mb-6">
                 <p className="text-sm">Pedro Gonçalves</p>
                 <p>Apr 14</p>
+              </div>
+              <div>
+                <a href="#">#databases</a>
+                <a href="#">#vectors</a>
+                <a href="#">#ai</a>
               </div>
             </div>
           </div>
 
-          <div className="mt-8 h-64 w-56 items-start rounded-md shadow-interaction bg-white">
+          <div className="mt-8 w-56 items-start rounded-md shadow-interaction bg-white">
             <div className="m-auto flex h-40 w-40 justify-center py-3">
               <Image
                 //Remove this src and add your own image
@@ -82,9 +92,14 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h3 className="text-lg font-bold">SolidJS in depth</h3>
-              <div className="mt-3 flex justify-between text-sm">
+              <div className="mt-4 flex justify-between text-sm mb-6">
                 <p className="text-sm">Mauricio Vieira</p>
                 <p>Apr 15</p>
+              </div>
+              <div>
+                <a href="#">#databases</a>
+                <a href="#">#vectors</a>
+                <a href="#">#ai</a>
               </div>
             </div>
           </div>
