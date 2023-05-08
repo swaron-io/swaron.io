@@ -48,10 +48,10 @@ export default function Home() {
                 <p className="text-sm">José Thomaz</p>
                 <p>Apr 13</p>
               </div>
-              <div className="text-[14px] flex justify-between text-light_blue">
-                <a href="#">#databases</a>
-                <a href="#">#vectors</a>
-                <a href="#">#ai</a>
+              <div className="text-[14px] flex justify-between text-lighter_blue">
+                <a href="#" className="hover:text-blue">#databases</a>
+                <a href="#" className="hover:text-blue">#vectors</a>
+                <a href="#" className="hover:text-blue">#ai</a>
               </div>
             </div>
           </div>
@@ -72,10 +72,10 @@ export default function Home() {
                 <p className="text-sm">Pedro Gonçalves</p>
                 <p>Apr 14</p>
               </div>
-              <div className="text-[14px] flex justify-between text-light_blue">
-                <a href="#">#databases</a>
-                <a href="#">#vectors</a>
-                <a href="#">#ai</a>
+              <div className="text-[14px] flex justify-between text-lighter_blue">
+                <a href="#" className="hover:text-blue">#databases</a>
+                <a href="#" className="hover:text-blue">#vectors</a>
+                <a href="#" className="hover:text-blue">#ai</a>
               </div>
             </div>
           </div>
@@ -96,10 +96,10 @@ export default function Home() {
                 <p className="text-sm">Mauricio Vieira</p>
                 <p>Apr 15</p>
               </div>
-              <div className="text-[14px] flex justify-between text-light_blue">
-                <a href="#">#databases</a>
-                <a href="#">#vectors</a>
-                <a href="#">#ai</a>
+              <div className="text-[14px] flex justify-between text-lighter_blue">
+                <a href="#" className="hover:text-blue">#databases</a>
+                <a href="#" className="hover:text-blue">#vectors</a>
+                <a href="#" className="hover:text-blue">#ai</a>
               </div>
             </div>
           </div>
