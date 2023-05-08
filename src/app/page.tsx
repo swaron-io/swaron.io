@@ -9,36 +9,6 @@ import { LoadingSpinner } from "./components/loading-spinner";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [email, setEmail] = useState<string>();
-  const [isLoading, setIsLoading] = useState(false);
-
-  const sendEmail = async (event: FormEvent) => {
-    event.preventDefault();
-    setIsLoading(true);
-    if (!email) return toast.error("Please enter your email");
-
-    const config = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email }),
-    };
-
-    try {
-      const result = await fetch(
-        "https://swaron-landing-api.onrender.com/register",
-        config
-      );
-      if (result.status === 409) {
-        toast.error("Email already registered ⚠️");
-      } else {
-        toast("Email sent! Welcome to swaron.io 🎉");
-      }
-    } catch (error) {
-      toast.error("Something went wrong, try again later 😢");
-    }
-    setIsLoading(false);
-  };
-
   return (
     <main className={`${inter.className} mx-auto w-[95%] max-w-[1140px]`}>
       <ToastContainer />{" "}
