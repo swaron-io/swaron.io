@@ -20,6 +20,7 @@ module.exports = {
       mid_white_blue: "#5D9BFC",
       app_bg: "#f4f4f4",
       green_shrek: "#74f9c4",
+      mid_gray: "#a9a9a9",
     },
     extend: {
       backgroundImage: {
