@@ -1,10 +1,8 @@
 "use client";
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import { FormEvent, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { LoadingSpinner } from "./components/loading-spinner";
 
 const inter = Inter({ subsets: ["latin"] });
 
