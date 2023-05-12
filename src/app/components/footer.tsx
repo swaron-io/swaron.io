@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="mt-20 h-32 w-screen px-32 text-gray sm:px-72">
+    <footer className="mx-auto mt-20 h-32 w-[95%] max-w-[1140px] text-gray">
       <div className="flex w-full justify-center border-t border-gray_low">
         <div className="flex gap-4 px-6 pt-14">
           <Link href="https://twitter.com/swaron_io">
