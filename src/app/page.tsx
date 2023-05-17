@@ -28,11 +28,11 @@ export default function Home() {
           Search
         </button>
       </div>
-      <div className="m-auto mt-16 w-[800px]">
+      <div className="m-auto mt-16 max-w-[800px]">
         <h3 className="py-4 text-2xl font-bold">Featured</h3>
-        <div className="m-auto flex justify-between">
+        <div className="m-auto flex flex-col flex-wrap items-center justify-between sm:flex-row">
           {/* Card */}
-          <div className="mt-8 w-60 items-start rounded-md shadow-interaction bg-white cursor-pointer hover:shadow-2xl transition duration-500">
+          <div className="mt-8 w-72 cursor-pointer items-start rounded-md bg-white shadow-interaction transition duration-500 hover:shadow-2xl sm:w-60">
             <div className="m-auto flex h-40 w-40 justify-center py-3">
               <Image
                 //Remove this src and add your own image
@@ -44,19 +44,25 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h3 className="text-lg font-bold">Vector Databases</h3>
-              <div className="mt-4 flex justify-between text-sm mb-6">
+              <div className="mb-6 mt-4 flex justify-between text-sm">
                 <p className="text-sm">José Thomaz</p>
                 <p>Apr 13</p>
               </div>
-              <div className="text-[14px] flex justify-between text-lighter_blue">
-                <a href="#" className="hover:text-blue">#databases</a>
-                <a href="#" className="hover:text-blue">#vectors</a>
-                <a href="#" className="hover:text-blue">#ai</a>
+              <div className="flex justify-between text-[14px] text-lighter_blue">
+                <a href="#" className="hover:text-blue">
+                  #databases
+                </a>
+                <a href="#" className="hover:text-blue">
+                  #vectors
+                </a>
+                <a href="#" className="hover:text-blue">
+                  #ai
+                </a>
               </div>
             </div>
           </div>
 
-          <div className="mt-8 w-60 items-start rounded-md shadow-interaction bg-white cursor-pointer hover:shadow-2xl transition duration-500">
+          {/* <div className="mt-8 w-60 cursor-pointer items-start rounded-md bg-white shadow-interaction transition duration-500 hover:shadow-2xl">
             <div className="m-auto flex h-40 w-40 justify-center py-3">
               <Image
                 //Remove this src and add your own image
@@ -68,19 +74,25 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h3 className="text-lg font-bold">Introduction to Scala</h3>
-              <div className="mt-4 flex justify-between text-sm mb-6">
+              <div className="mb-6 mt-4 flex justify-between text-sm">
                 <p className="text-sm">Pedro Gonçalves</p>
                 <p>Apr 14</p>
               </div>
-              <div className="text-[14px] flex justify-between text-lighter_blue">
-                <a href="#" className="hover:text-blue">#scala</a>
-                <a href="#" className="hover:text-blue">#functional</a>
-                <a href="#" className="hover:text-blue">#java</a>
+              <div className="flex justify-between text-[14px] text-lighter_blue">
+                <a href="#" className="hover:text-blue">
+                  #scala
+                </a>
+                <a href="#" className="hover:text-blue">
+                  #functional
+                </a>
+                <a href="#" className="hover:text-blue">
+                  #java
+                </a>
               </div>
             </div>
           </div>
 
-          <div className="mt-8 w-60 items-start rounded-md shadow-interaction bg-white cursor-pointer hover:shadow-2xl transition duration-500">
+          <div className="mt-8 w-60 cursor-pointer items-start rounded-md bg-white shadow-interaction transition duration-500 hover:shadow-2xl">
             <div className="m-auto flex h-40 w-40 justify-center py-3">
               <Image
                 //Remove this src and add your own image
@@ -92,17 +104,23 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h3 className="text-lg font-bold">SolidJS in depth</h3>
-              <div className="mt-4 flex justify-between text-sm mb-6">
+              <div className="mb-6 mt-4 flex justify-between text-sm">
                 <p className="text-sm">Mauricio Vieira</p>
                 <p>Apr 15</p>
               </div>
-              <div className="text-[14px] flex justify-between text-lighter_blue">
-                <a href="#" className="hover:text-blue">#solidjs</a>
-                <a href="#" className="hover:text-blue">#typescript</a>
-                <a href="#" className="hover:text-blue">#react</a>
+              <div className="flex justify-between text-[14px] text-lighter_blue">
+                <a href="#" className="hover:text-blue">
+                  #solidjs
+                </a>
+                <a href="#" className="hover:text-blue">
+                  #typescript
+                </a>
+                <a href="#" className="hover:text-blue">
+                  #react
+                </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </main>
