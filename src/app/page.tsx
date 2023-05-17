@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const featuredCards = [
   {
+    id: 1,
     title: "Vector Databases",
     author: "José Thomaz",
     date: "Apr 13",
@@ -18,6 +19,7 @@ const featuredCards = [
     tags: ["databases", "vectors", "ai"],
   },
   {
+    id: 2,
     title: "Introduction to Scala",
     author: "Pedro Gonçalves",
     date: "Apr 13",
@@ -28,6 +30,7 @@ const featuredCards = [
     tags: ["scala", "functional"],
   },
   {
+    id: 3,
     title: "SolidJS in depth",
     author: "Maurício Vieira",
     date: "Apr 13",
@@ -65,34 +68,32 @@ export default function Home() {
         <h3 className="py-4 text-2xl font-bold">Featured</h3>
         <div className="m-auto flex flex-col flex-wrap items-center justify-between sm:flex-row">
           {featuredCards.map((card) => (
-            <>
-              <div className="mt-8 w-72 cursor-pointer items-start rounded-md bg-white shadow-interaction transition duration-500 hover:shadow-2xl sm:w-60">
-                <div className="m-auto flex h-40 w-40 justify-center py-3">
-                  <Image
-                    src={card.image.url}
-                    width={160}
-                    height={160}
-                    alt={card.image.alt}
-                  />
+            <div className="mt-8 w-72 cursor-pointer items-start rounded-md bg-white shadow-interaction transition duration-500 hover:shadow-2xl sm:w-60">
+              <div className="m-auto flex h-40 w-40 justify-center py-3">
+                <Image
+                  src={card.image.url}
+                  width={160}
+                  height={160}
+                  alt={card.image.alt}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-bold">{card.title}</h3>
+                <div className="mb-6 mt-4 flex justify-between text-sm">
+                  <p className="text-sm">{card.author}</p>
+                  <p>{card.date}</p>
                 </div>
-                <div className="p-4">
-                  <h3 className="text-lg font-bold">{card.title}</h3>
-                  <div className="mb-6 mt-4 flex justify-between text-sm">
-                    <p className="text-sm">{card.author}</p>
-                    <p>{card.date}</p>
-                  </div>
-                  <div className="flex justify-between text-[14px] text-lighter_blue">
-                    {card.tags.map((tag) => (
-                      <div>
-                        <a href="#" className="hover:text-blue">
-                          {`#${tag}`}
-                        </a>
-                      </div>
-                    ))}
-                  </div>
+                <div className="flex justify-between text-[14px] text-lighter_blue">
+                  {card.tags.map((tag) => (
+                    <div>
+                      <a href="#" className="hover:text-blue">
+                        {`#${tag}`}
+                      </a>
+                    </div>
+                  ))}
                 </div>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </div>
