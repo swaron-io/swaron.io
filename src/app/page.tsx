@@ -16,7 +16,11 @@ const featuredCards = [
       url: "https://cdn.discordapp.com/attachments/1100525079013634168/1104841483800039494/Rectangle_5.png",
       alt: "Vector database",
     },
-    tags: ["databases", "vectors", "ai"],
+    tags: [
+      { name: "databases", id: 1 },
+      { name: "vectors", id: 2 },
+      { name: "ai", id: 3 },
+    ],
   },
   {
     id: 2,
@@ -27,7 +31,11 @@ const featuredCards = [
       url: "https://cdn.discordapp.com/attachments/1100525079013634168/1104841483531587665/Rectangle_6.png",
       alt: "Article image",
     },
-    tags: ["scala", "functional"],
+    tags: [
+      { name: "scala", id: 1 },
+      { name: "functional", id: 2 },
+      { name: "java", id: 3 },
+    ],
   },
   {
     id: 3,
@@ -38,7 +46,11 @@ const featuredCards = [
       url: "https://cdn.discordapp.com/attachments/1100525079013634168/1104841649907052584/Rectangle_7.png",
       alt: "Article image",
     },
-    tags: ["solidjs", "typescript", "functional"],
+    tags: [
+      { name: "solidjs", id: 1 },
+      { name: "typescript", id: 2 },
+      { name: "functional", id: 3 },
+    ],
   },
 ];
 
@@ -68,7 +80,10 @@ export default function Home() {
         <h3 className="py-4 text-2xl font-bold">Featured</h3>
         <div className="m-auto flex flex-col flex-wrap items-center justify-between sm:flex-row">
           {featuredCards.map((card) => (
-            <div className="mt-8 w-72 cursor-pointer items-start rounded-md bg-white shadow-interaction transition duration-500 hover:shadow-2xl sm:w-60">
+            <div
+              key={card.id}
+              className="mt-8 w-72 cursor-pointer items-start rounded-md bg-white shadow-interaction transition duration-500 hover:shadow-2xl sm:w-60"
+            >
               <div className="m-auto flex h-40 w-40 justify-center py-3">
                 <Image
                   src={card.image.url}
@@ -85,9 +100,9 @@ export default function Home() {
                 </div>
                 <div className="flex justify-between text-[14px] text-lighter_blue">
                   {card.tags.map((tag) => (
-                    <div>
+                    <div key={tag.id}>
                       <a href="#" className="hover:text-blue">
-                        {`#${tag}`}
+                        {`#${tag.name}`}
                       </a>
                     </div>
                   ))}
