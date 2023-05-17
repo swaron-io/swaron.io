@@ -6,12 +6,45 @@ import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const featuredCards = [
+  {
+    title: "Vector Databases",
+    author: "José Thomaz",
+    date: "Apr 13",
+    image: {
+      url: "https://cdn.discordapp.com/attachments/1100525079013634168/1104841483800039494/Rectangle_5.png",
+      alt: "Vector database",
+    },
+    tags: ["databases", "vectors", "ai"],
+  },
+  {
+    title: "Introduction to Scala",
+    author: "Pedro Gonçalves",
+    date: "Apr 13",
+    image: {
+      url: "https://cdn.discordapp.com/attachments/1100525079013634168/1104841483531587665/Rectangle_6.png",
+      alt: "Article image",
+    },
+    tags: ["scala", "functional"],
+  },
+  {
+    title: "SolidJS in depth",
+    author: "Maurício Vieira",
+    date: "Apr 13",
+    image: {
+      url: "https://cdn.discordapp.com/attachments/1100525079013634168/1104841649907052584/Rectangle_7.png",
+      alt: "Article image",
+    },
+    tags: ["solidjs", "typescript", "functional"],
+  },
+];
+
 export default function Home() {
   return (
     <main className={`${inter.className} mx-auto w-[95%] max-w-[1140px]`}>
       <ToastContainer />{" "}
-      <div className="flex items-center justify-center pb-4 pt-14 md:flex-row md:justify-center">
-        <h1 className="flex w-[60%] text-center text-5xl font-bold">
+      <div className="flex items-center justify-center pb-8 md:flex-row md:justify-center">
+        <h1 className="flex w-[100%] text-center text-5xl font-bold md:w-[60%]">
           Find out the best content to make your life easy
         </h1>
       </div>
@@ -31,96 +64,36 @@ export default function Home() {
       <div className="m-auto mt-16 max-w-[800px]">
         <h3 className="py-4 text-2xl font-bold">Featured</h3>
         <div className="m-auto flex flex-col flex-wrap items-center justify-between sm:flex-row">
-          {/* Card */}
-          <div className="mt-8 w-72 cursor-pointer items-start rounded-md bg-white shadow-interaction transition duration-500 hover:shadow-2xl sm:w-60">
-            <div className="m-auto flex h-40 w-40 justify-center py-3">
-              <Image
-                //Remove this src and add your own image
-                src="https://cdn.discordapp.com/attachments/1100525079013634168/1104841483800039494/Rectangle_5.png"
-                width={160}
-                height={160}
-                alt={"article image"}
-              />
-            </div>
-            <div className="p-4">
-              <h3 className="text-lg font-bold">Vector Databases</h3>
-              <div className="mb-6 mt-4 flex justify-between text-sm">
-                <p className="text-sm">José Thomaz</p>
-                <p>Apr 13</p>
+          {featuredCards.map((card) => (
+            <>
+              <div className="mt-8 w-72 cursor-pointer items-start rounded-md bg-white shadow-interaction transition duration-500 hover:shadow-2xl sm:w-60">
+                <div className="m-auto flex h-40 w-40 justify-center py-3">
+                  <Image
+                    src={card.image.url}
+                    width={160}
+                    height={160}
+                    alt={card.image.alt}
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-bold">{card.title}</h3>
+                  <div className="mb-6 mt-4 flex justify-between text-sm">
+                    <p className="text-sm">{card.author}</p>
+                    <p>{card.date}</p>
+                  </div>
+                  <div className="flex justify-between text-[14px] text-lighter_blue">
+                    {card.tags.map((tag) => (
+                      <div>
+                        <a href="#" className="hover:text-blue">
+                          {`#${tag}`}
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-              <div className="flex justify-between text-[14px] text-lighter_blue">
-                <a href="#" className="hover:text-blue">
-                  #databases
-                </a>
-                <a href="#" className="hover:text-blue">
-                  #vectors
-                </a>
-                <a href="#" className="hover:text-blue">
-                  #ai
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* <div className="mt-8 w-60 cursor-pointer items-start rounded-md bg-white shadow-interaction transition duration-500 hover:shadow-2xl">
-            <div className="m-auto flex h-40 w-40 justify-center py-3">
-              <Image
-                //Remove this src and add your own image
-                src="https://cdn.discordapp.com/attachments/1100525079013634168/1104841483531587665/Rectangle_6.png"
-                width={160}
-                height={160}
-                alt={"article image"}
-              />
-            </div>
-            <div className="p-4">
-              <h3 className="text-lg font-bold">Introduction to Scala</h3>
-              <div className="mb-6 mt-4 flex justify-between text-sm">
-                <p className="text-sm">Pedro Gonçalves</p>
-                <p>Apr 14</p>
-              </div>
-              <div className="flex justify-between text-[14px] text-lighter_blue">
-                <a href="#" className="hover:text-blue">
-                  #scala
-                </a>
-                <a href="#" className="hover:text-blue">
-                  #functional
-                </a>
-                <a href="#" className="hover:text-blue">
-                  #java
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-8 w-60 cursor-pointer items-start rounded-md bg-white shadow-interaction transition duration-500 hover:shadow-2xl">
-            <div className="m-auto flex h-40 w-40 justify-center py-3">
-              <Image
-                //Remove this src and add your own image
-                src="https://cdn.discordapp.com/attachments/1100525079013634168/1104841649907052584/Rectangle_7.png"
-                width={160}
-                height={160}
-                alt={"article image"}
-              />
-            </div>
-            <div className="p-4">
-              <h3 className="text-lg font-bold">SolidJS in depth</h3>
-              <div className="mb-6 mt-4 flex justify-between text-sm">
-                <p className="text-sm">Mauricio Vieira</p>
-                <p>Apr 15</p>
-              </div>
-              <div className="flex justify-between text-[14px] text-lighter_blue">
-                <a href="#" className="hover:text-blue">
-                  #solidjs
-                </a>
-                <a href="#" className="hover:text-blue">
-                  #typescript
-                </a>
-                <a href="#" className="hover:text-blue">
-                  #react
-                </a>
-              </div>
-            </div>
-          </div> */}
+            </>
+          ))}
         </div>
       </div>
     </main>

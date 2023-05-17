@@ -3,7 +3,7 @@ import { Dropdown } from "./dropdown";
 
 export function Header() {
   return (
-    <header className="mx-auto flex w-[95%] max-w-[1140px] items-center py-16">
+    <header className="mx-auto flex w-[95%] max-w-[1140px] items-center py-8 sm:py-16">
       <div className="flex w-[95%] justify-between">
         <Link href={"/"}>
           <h3 className="mt-[2px] items-center text-2xl font-bold">
